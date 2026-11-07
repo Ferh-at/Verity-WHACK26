@@ -1,0 +1,6 @@
+{
+ "n_searches": 200,
+ "candidates": 100,
+ "share_with_trusted": 0.0,
+ "leak_audit": false
+}

@@ -1,0 +1,90 @@
+{
+ "ours": {
+  "fdr_mean": 0.003333333333333333,
+  "fdr_pooled": 0.004975124378109453,
+  "fdr_lo": 0.0,
+  "fdr_hi": 0.01,
+  "trusted": 201,
+  "false_trusted": 1,
+  "n_seeds": 50
+ },
+ "naive": {
+  "fdr_mean": 0.7813407740247892,
+  "fdr_pooled": 0.7845134997452878,
+  "fdr_lo": 0.7731758861716713,
+  "fdr_hi": 0.7898033611510173,
+  "trusted": 1963,
+  "false_trusted": 1540,
+  "n_seeds": 50
+ },
+ "recall_by_sr": {
+  "0.5": 0.0,
+  "1.0": 0.24666666666666667,
+  "1.5": 0.66,
+  "2.0": 0.97
+ },
+ "killed_by": {
+  "real": {
+   "outlier": 40,
+   "luck_hurdle": 176,
+   "trusted": 200,
+   "block_null": 70,
+   "sign": 4,
+   "by_fdr": 2,
+   "factor": 1,
+   "validation": 7
+  },
+  "leaky": {
+   "leak_audit": 500
+  },
+  "outlier": {
+   "block_null": 276,
+   "sign": 182,
+   "outlier": 33,
+   "luck_hurdle": 9
+  },
+  "regime": {
+   "block_null": 295,
+   "luck_hurdle": 66,
+   "sign": 47,
+   "outlier": 91,
+   "validation": 1
+  },
+  "beta": {
+   "factor": 400,
+   "outlier": 50,
+   "block_null": 20,
+   "luck_hurdle": 30
+  },
+  "dup": {
+   "sign": 620,
+   "block_null": 280,
+   "outlier": 100
+  },
+  "noise": {
+   "sign": 3415,
+   "block_null": 2799,
+   "outlier": 202,
+   "luck_hurdle": 83,
+   "trusted": 1
+  }
+ },
+ "labels": {
+  "Rejected": 9425,
+  "Fragile": 374,
+  "Replicated": 179,
+  "Promising": 22
+ },
+ "cant_tell": 0,
+ "real_wrongly_killed": 0.082,
+ "leaky_killed_by_leak_audit": 1.0,
+ "leaky_not_trusted": 1.0,
+ "outlier_killed_by_outlier_or_block_null_or_sign": 0.982,
+ "outlier_not_trusted": 1.0,
+ "regime_killed_by_regime_or_validation": 0.002,
+ "regime_not_trusted": 1.0,
+ "beta_killed_by_factor": 0.8,
+ "beta_not_trusted": 1.0,
+ "dup_single_verdict_share": 1.0,
+ "factor_enabled": true
+}

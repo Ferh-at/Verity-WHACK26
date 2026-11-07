@@ -1,0 +1,1 @@
+{"request": {"system": "Answer with JSON only.", "user": "What was US unemployment rate in percent for January 2026? If you do not know, answer null. Reply as {\"value\": number|null}", "temperature": 0.0}, "response": {"value": 5.546529262081543}, "model": "gpt-4o-mini", "ts": "2026-11-07T13:45:00+00:00"}

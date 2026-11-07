@@ -1,0 +1,600 @@
+{"seed": 42, "kind": "trap", "type": "real", "truth": true, "label": "Promising", "killed_by": null, "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": 0.5}
+{"seed": 42, "kind": "trap", "type": "real", "truth": true, "label": "Rejected", "killed_by": "block_null", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": 1.0}
+{"seed": 42, "kind": "trap", "type": "real", "truth": true, "label": "Rejected", "killed_by": "block_null", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": 1.5}
+{"seed": 42, "kind": "trap", "type": "real", "truth": true, "label": "Promising", "killed_by": null, "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": 2.0}
+{"seed": 42, "kind": "trap", "type": "real", "truth": true, "label": "Promising", "killed_by": null, "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": 0.5}
+{"seed": 42, "kind": "trap", "type": "real", "truth": true, "label": "Rejected", "killed_by": "block_null", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": 1.0}
+{"seed": 42, "kind": "trap", "type": "real", "truth": true, "label": "Rejected", "killed_by": "block_null", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": 1.5}
+{"seed": 42, "kind": "trap", "type": "real", "truth": true, "label": "Promising", "killed_by": null, "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": 2.0}
+{"seed": 42, "kind": "trap", "type": "real", "truth": true, "label": "Rejected", "killed_by": "block_null", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": 0.5}
+{"seed": 42, "kind": "trap", "type": "real", "truth": true, "label": "Rejected", "killed_by": "block_null", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": 1.0}
+{"seed": 42, "kind": "trap", "type": "leaky", "truth": false, "label": "Rejected", "killed_by": "leak_audit", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "leaky", "truth": false, "label": "Rejected", "killed_by": "leak_audit", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "leaky", "truth": false, "label": "Rejected", "killed_by": "leak_audit", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "leaky", "truth": false, "label": "Rejected", "killed_by": "leak_audit", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "leaky", "truth": false, "label": "Can't tell yet", "killed_by": "leak_audit", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "leaky", "truth": false, "label": "Rejected", "killed_by": "leak_audit", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "leaky", "truth": false, "label": "Rejected", "killed_by": "leak_audit", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "leaky", "truth": false, "label": "Rejected", "killed_by": "leak_audit", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "leaky", "truth": false, "label": "Rejected", "killed_by": "leak_audit", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "leaky", "truth": false, "label": "Rejected", "killed_by": "leak_audit", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "outlier", "truth": false, "label": "Rejected", "killed_by": "outlier", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "outlier", "truth": false, "label": "Can't tell yet", "killed_by": "outlier", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "outlier", "truth": false, "label": "Rejected", "killed_by": "outlier", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "outlier", "truth": false, "label": "Rejected", "killed_by": "outlier", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "outlier", "truth": false, "label": "Rejected", "killed_by": "outlier", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "outlier", "truth": false, "label": "Rejected", "killed_by": "outlier", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "outlier", "truth": false, "label": "Rejected", "killed_by": "outlier", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "outlier", "truth": false, "label": "Rejected", "killed_by": "outlier", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "outlier", "truth": false, "label": "Can't tell yet", "killed_by": "outlier", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "outlier", "truth": false, "label": "Rejected", "killed_by": "outlier", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "regime", "truth": false, "label": "Rejected", "killed_by": "regime", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "regime", "truth": false, "label": "Rejected", "killed_by": "regime", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "regime", "truth": false, "label": "Rejected", "killed_by": "regime", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "regime", "truth": false, "label": "Rejected", "killed_by": "regime", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "regime", "truth": false, "label": "Rejected", "killed_by": "regime", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "regime", "truth": false, "label": "Can't tell yet", "killed_by": "regime", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "regime", "truth": false, "label": "Rejected", "killed_by": "regime", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "regime", "truth": false, "label": "Rejected", "killed_by": "regime", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "regime", "truth": false, "label": "Rejected", "killed_by": "regime", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "regime", "truth": false, "label": "Rejected", "killed_by": "regime", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "beta", "truth": false, "label": "Rejected", "killed_by": "factor", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "beta", "truth": false, "label": "Rejected", "killed_by": "factor", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "beta", "truth": false, "label": "Can't tell yet", "killed_by": "factor", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "beta", "truth": false, "label": "Rejected", "killed_by": "factor", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "beta", "truth": false, "label": "Rejected", "killed_by": "factor", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "beta", "truth": false, "label": "Rejected", "killed_by": "factor", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "beta", "truth": false, "label": "Rejected", "killed_by": "factor", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "beta", "truth": false, "label": "Rejected", "killed_by": "factor", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "beta", "truth": false, "label": "Rejected", "killed_by": "factor", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "beta", "truth": false, "label": "Can't tell yet", "killed_by": "factor", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "dup", "truth": false, "label": "Rejected", "killed_by": "duplicate", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "dup", "truth": false, "label": "Rejected", "killed_by": "duplicate", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "dup", "truth": false, "label": "Rejected", "killed_by": "duplicate", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "dup", "truth": false, "label": "Rejected", "killed_by": "duplicate", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "dup", "truth": false, "label": "Rejected", "killed_by": "duplicate", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "dup", "truth": false, "label": "Rejected", "killed_by": "duplicate", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "dup", "truth": false, "label": "Can't tell yet", "killed_by": "duplicate", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "dup", "truth": false, "label": "Rejected", "killed_by": "duplicate", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "dup", "truth": false, "label": "Rejected", "killed_by": "duplicate", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "dup", "truth": false, "label": "Rejected", "killed_by": "duplicate", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "dup", "truth": false, "label": "Rejected", "killed_by": "duplicate", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "dup", "truth": false, "label": "Rejected", "killed_by": "duplicate", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "dup", "truth": false, "label": "Rejected", "killed_by": "duplicate", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "dup", "truth": false, "label": "Can't tell yet", "killed_by": "duplicate", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "dup", "truth": false, "label": "Rejected", "killed_by": "duplicate", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "dup", "truth": false, "label": "Rejected", "killed_by": "duplicate", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "dup", "truth": false, "label": "Rejected", "killed_by": "duplicate", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "dup", "truth": false, "label": "Rejected", "killed_by": "duplicate", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "dup", "truth": false, "label": "Rejected", "killed_by": "duplicate", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "dup", "truth": false, "label": "Rejected", "killed_by": "duplicate", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Can't tell yet", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Can't tell yet", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Can't tell yet", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Can't tell yet", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Can't tell yet", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Can't tell yet", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Can't tell yet", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Can't tell yet", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Can't tell yet", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Can't tell yet", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Can't tell yet", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Can't tell yet", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Can't tell yet", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Can't tell yet", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Promising", "killed_by": null, "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Can't tell yet", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Can't tell yet", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Can't tell yet", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Can't tell yet", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Can't tell yet", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": true, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 42, "kind": "trap", "type": "noise", "truth": false, "label": "Rejected", "killed_by": "by_fdr", "delay_m": null, "false_alarm": null, "naive_trusted": false, "planted_sr": null}
+{"seed": 0, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 13, "false_alarm": true}
+{"seed": 1, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 28, "false_alarm": false}
+{"seed": 2, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 28, "false_alarm": false}
+{"seed": 3, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 24, "false_alarm": false}
+{"seed": 4, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 24, "false_alarm": false}
+{"seed": 5, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 19, "false_alarm": false}
+{"seed": 6, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 27, "false_alarm": false}
+{"seed": 7, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 25, "false_alarm": false}
+{"seed": 8, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": null, "false_alarm": false}
+{"seed": 9, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 6, "false_alarm": true}
+{"seed": 10, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 22, "false_alarm": false}
+{"seed": 11, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 15, "false_alarm": false}
+{"seed": 12, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": null, "false_alarm": false}
+{"seed": 13, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 7, "false_alarm": false}
+{"seed": 14, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 17, "false_alarm": false}
+{"seed": 15, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 9, "false_alarm": false}
+{"seed": 16, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 12, "false_alarm": false}
+{"seed": 17, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 23, "false_alarm": false}
+{"seed": 18, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 30, "false_alarm": false}
+{"seed": 19, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 18, "false_alarm": false}
+{"seed": 20, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 22, "false_alarm": false}
+{"seed": 21, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 16, "false_alarm": false}
+{"seed": 22, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 28, "false_alarm": false}
+{"seed": 23, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 11, "false_alarm": true}
+{"seed": 24, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 18, "false_alarm": false}
+{"seed": 25, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 18, "false_alarm": false}
+{"seed": 26, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 20, "false_alarm": false}
+{"seed": 27, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 23, "false_alarm": false}
+{"seed": 28, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 10, "false_alarm": false}
+{"seed": 29, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 17, "false_alarm": false}
+{"seed": 30, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 20, "false_alarm": false}
+{"seed": 31, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 29, "false_alarm": false}
+{"seed": 32, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 11, "false_alarm": false}
+{"seed": 33, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 13, "false_alarm": false}
+{"seed": 34, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 29, "false_alarm": true}
+{"seed": 35, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 28, "false_alarm": false}
+{"seed": 36, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 25, "false_alarm": false}
+{"seed": 37, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 13, "false_alarm": false}
+{"seed": 38, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 16, "false_alarm": false}
+{"seed": 39, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 15, "false_alarm": false}
+{"seed": 40, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 19, "false_alarm": false}
+{"seed": 41, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 31, "false_alarm": false}
+{"seed": 42, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 9, "false_alarm": false}
+{"seed": 43, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 24, "false_alarm": true}
+{"seed": 44, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 26, "false_alarm": false}
+{"seed": 45, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 19, "false_alarm": false}
+{"seed": 46, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": null, "false_alarm": false}
+{"seed": 47, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 27, "false_alarm": false}
+{"seed": 48, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 32, "false_alarm": false}
+{"seed": 49, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 28, "false_alarm": false}
+{"seed": 50, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 26, "false_alarm": false}
+{"seed": 51, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 11, "false_alarm": true}
+{"seed": 52, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 30, "false_alarm": false}
+{"seed": 53, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 32, "false_alarm": false}
+{"seed": 54, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 21, "false_alarm": false}
+{"seed": 55, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 28, "false_alarm": false}
+{"seed": 56, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 22, "false_alarm": false}
+{"seed": 57, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 25, "false_alarm": false}
+{"seed": 58, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 15, "false_alarm": false}
+{"seed": 59, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 19, "false_alarm": false}
+{"seed": 60, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 26, "false_alarm": false}
+{"seed": 61, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 8, "false_alarm": false}
+{"seed": 62, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 28, "false_alarm": false}
+{"seed": 63, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 5, "false_alarm": false}
+{"seed": 64, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 16, "false_alarm": false}
+{"seed": 65, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 13, "false_alarm": true}
+{"seed": 66, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 10, "false_alarm": false}
+{"seed": 67, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 8, "false_alarm": true}
+{"seed": 68, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 21, "false_alarm": false}
+{"seed": 69, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 24, "false_alarm": false}
+{"seed": 70, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 32, "false_alarm": false}
+{"seed": 71, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 19, "false_alarm": false}
+{"seed": 72, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 25, "false_alarm": false}
+{"seed": 73, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 19, "false_alarm": false}
+{"seed": 74, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 25, "false_alarm": false}
+{"seed": 75, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": null, "false_alarm": false}
+{"seed": 76, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 28, "false_alarm": false}
+{"seed": 77, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 25, "false_alarm": false}
+{"seed": 78, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 19, "false_alarm": false}
+{"seed": 79, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": null, "false_alarm": false}
+{"seed": 80, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": null, "false_alarm": false}
+{"seed": 81, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 26, "false_alarm": true}
+{"seed": 82, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 20, "false_alarm": false}
+{"seed": 83, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 27, "false_alarm": true}
+{"seed": 84, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 31, "false_alarm": true}
+{"seed": 85, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 6, "false_alarm": false}
+{"seed": 86, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 5, "false_alarm": false}
+{"seed": 87, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 29, "false_alarm": true}
+{"seed": 88, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 7, "false_alarm": false}
+{"seed": 89, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 22, "false_alarm": false}
+{"seed": 90, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 19, "false_alarm": false}
+{"seed": 91, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 5, "false_alarm": false}
+{"seed": 92, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 16, "false_alarm": false}
+{"seed": 93, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 28, "false_alarm": false}
+{"seed": 94, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 17, "false_alarm": false}
+{"seed": 95, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 16, "false_alarm": false}
+{"seed": 96, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 23, "false_alarm": false}
+{"seed": 97, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 14, "false_alarm": false}
+{"seed": 98, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 26, "false_alarm": false}
+{"seed": 99, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 16, "false_alarm": false}
+{"seed": 100, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 25, "false_alarm": false}
+{"seed": 101, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 21, "false_alarm": false}
+{"seed": 102, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 7, "false_alarm": true}
+{"seed": 103, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 15, "false_alarm": true}
+{"seed": 104, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 31, "false_alarm": false}
+{"seed": 105, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 22, "false_alarm": false}
+{"seed": 106, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 19, "false_alarm": false}
+{"seed": 107, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 20, "false_alarm": false}
+{"seed": 108, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 29, "false_alarm": false}
+{"seed": 109, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 30, "false_alarm": false}
+{"seed": 110, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 5, "false_alarm": false}
+{"seed": 111, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 13, "false_alarm": false}
+{"seed": 112, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 5, "false_alarm": false}
+{"seed": 113, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 12, "false_alarm": false}
+{"seed": 114, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 29, "false_alarm": false}
+{"seed": 115, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 18, "false_alarm": false}
+{"seed": 116, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 12, "false_alarm": false}
+{"seed": 117, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 27, "false_alarm": true}
+{"seed": 118, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 13, "false_alarm": false}
+{"seed": 119, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 31, "false_alarm": true}
+{"seed": 120, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": null, "false_alarm": true}
+{"seed": 121, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 6, "false_alarm": true}
+{"seed": 122, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 11, "false_alarm": false}
+{"seed": 123, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 6, "false_alarm": false}
+{"seed": 124, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 6, "false_alarm": true}
+{"seed": 125, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 17, "false_alarm": false}
+{"seed": 126, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 10, "false_alarm": false}
+{"seed": 127, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 13, "false_alarm": false}
+{"seed": 128, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 8, "false_alarm": false}
+{"seed": 129, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 5, "false_alarm": false}
+{"seed": 130, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 14, "false_alarm": false}
+{"seed": 131, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 11, "false_alarm": false}
+{"seed": 132, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 14, "false_alarm": false}
+{"seed": 133, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 25, "false_alarm": false}
+{"seed": 134, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 14, "false_alarm": false}
+{"seed": 135, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 10, "false_alarm": true}
+{"seed": 136, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 9, "false_alarm": false}
+{"seed": 137, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 31, "false_alarm": true}
+{"seed": 138, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 10, "false_alarm": false}
+{"seed": 139, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 7, "false_alarm": false}
+{"seed": 140, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 20, "false_alarm": true}
+{"seed": 141, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 19, "false_alarm": false}
+{"seed": 142, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 22, "false_alarm": false}
+{"seed": 143, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 11, "false_alarm": false}
+{"seed": 144, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 30, "false_alarm": false}
+{"seed": 145, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 25, "false_alarm": false}
+{"seed": 146, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 27, "false_alarm": false}
+{"seed": 147, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 19, "false_alarm": false}
+{"seed": 148, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 16, "false_alarm": true}
+{"seed": 149, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 15, "false_alarm": false}
+{"seed": 150, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 5, "false_alarm": false}
+{"seed": 151, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 28, "false_alarm": false}
+{"seed": 152, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 13, "false_alarm": false}
+{"seed": 153, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 23, "false_alarm": false}
+{"seed": 154, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 24, "false_alarm": false}
+{"seed": 155, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 30, "false_alarm": false}
+{"seed": 156, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 5, "false_alarm": false}
+{"seed": 157, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 7, "false_alarm": false}
+{"seed": 158, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 29, "false_alarm": false}
+{"seed": 159, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 17, "false_alarm": false}
+{"seed": 160, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 21, "false_alarm": false}
+{"seed": 161, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 6, "false_alarm": false}
+{"seed": 162, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 21, "false_alarm": false}
+{"seed": 163, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 10, "false_alarm": false}
+{"seed": 164, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 20, "false_alarm": false}
+{"seed": 165, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 12, "false_alarm": false}
+{"seed": 166, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 26, "false_alarm": false}
+{"seed": 167, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 5, "false_alarm": false}
+{"seed": 168, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 27, "false_alarm": true}
+{"seed": 169, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 23, "false_alarm": false}
+{"seed": 170, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 16, "false_alarm": false}
+{"seed": 171, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 24, "false_alarm": false}
+{"seed": 172, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 10, "false_alarm": false}
+{"seed": 173, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 29, "false_alarm": false}
+{"seed": 174, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 25, "false_alarm": false}
+{"seed": 175, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 23, "false_alarm": false}
+{"seed": 176, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 25, "false_alarm": true}
+{"seed": 177, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 24, "false_alarm": false}
+{"seed": 178, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 29, "false_alarm": false}
+{"seed": 179, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 17, "false_alarm": false}
+{"seed": 180, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 5, "false_alarm": false}
+{"seed": 181, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 22, "false_alarm": false}
+{"seed": 182, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 16, "false_alarm": false}
+{"seed": 183, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 5, "false_alarm": false}
+{"seed": 184, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 21, "false_alarm": false}
+{"seed": 185, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 15, "false_alarm": false}
+{"seed": 186, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 16, "false_alarm": false}
+{"seed": 187, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 5, "false_alarm": false}
+{"seed": 188, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 31, "false_alarm": false}
+{"seed": 189, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 14, "false_alarm": false}
+{"seed": 190, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 12, "false_alarm": false}
+{"seed": 191, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 17, "false_alarm": true}
+{"seed": 192, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 12, "false_alarm": false}
+{"seed": 193, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 23, "false_alarm": false}
+{"seed": 194, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 18, "false_alarm": false}
+{"seed": 195, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 13, "false_alarm": false}
+{"seed": 196, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": null, "false_alarm": false}
+{"seed": 197, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": null, "false_alarm": true}
+{"seed": 198, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 29, "false_alarm": false}
+{"seed": 199, "kind": "break", "type": "bonds_protect", "truth": true, "label": null, "killed_by": null, "delay_m": 16, "false_alarm": false}
+{"seed": 0, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 7, "false_alarm": false}
+{"seed": 1, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 7, "false_alarm": false}
+{"seed": 2, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 12, "false_alarm": false}
+{"seed": 3, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 25, "false_alarm": false}
+{"seed": 4, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 13, "false_alarm": false}
+{"seed": 5, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 6, "false_alarm": false}
+{"seed": 6, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 10, "false_alarm": false}
+{"seed": 7, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 15, "false_alarm": false}
+{"seed": 8, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 12, "false_alarm": false}
+{"seed": 9, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 10, "false_alarm": false}
+{"seed": 10, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 11, "false_alarm": false}
+{"seed": 11, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 19, "false_alarm": false}
+{"seed": 12, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 19, "false_alarm": false}
+{"seed": 13, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": null, "false_alarm": false}
+{"seed": 14, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 14, "false_alarm": false}
+{"seed": 15, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 19, "false_alarm": false}
+{"seed": 16, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 15, "false_alarm": false}
+{"seed": 17, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": null, "false_alarm": false}
+{"seed": 18, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": null, "false_alarm": false}
+{"seed": 19, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 8, "false_alarm": false}
+{"seed": 20, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 29, "false_alarm": false}
+{"seed": 21, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 5, "false_alarm": false}
+{"seed": 22, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 7, "false_alarm": false}
+{"seed": 23, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 18, "false_alarm": false}
+{"seed": 24, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": null, "false_alarm": false}
+{"seed": 25, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 15, "false_alarm": false}
+{"seed": 26, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 18, "false_alarm": false}
+{"seed": 27, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 31, "false_alarm": false}
+{"seed": 28, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 14, "false_alarm": false}
+{"seed": 29, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 28, "false_alarm": false}
+{"seed": 30, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 10, "false_alarm": false}
+{"seed": 31, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 20, "false_alarm": false}
+{"seed": 32, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 32, "false_alarm": false}
+{"seed": 33, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 17, "false_alarm": false}
+{"seed": 34, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 9, "false_alarm": false}
+{"seed": 35, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 16, "false_alarm": false}
+{"seed": 36, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 25, "false_alarm": false}
+{"seed": 37, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 22, "false_alarm": false}
+{"seed": 38, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 31, "false_alarm": false}
+{"seed": 39, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 21, "false_alarm": false}
+{"seed": 40, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 6, "false_alarm": false}
+{"seed": 41, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": null, "false_alarm": false}
+{"seed": 42, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 9, "false_alarm": false}
+{"seed": 43, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 13, "false_alarm": false}
+{"seed": 44, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 30, "false_alarm": false}
+{"seed": 45, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 20, "false_alarm": false}
+{"seed": 46, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 10, "false_alarm": false}
+{"seed": 47, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 23, "false_alarm": false}
+{"seed": 48, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 28, "false_alarm": false}
+{"seed": 49, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 7, "false_alarm": false}
+{"seed": 50, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 29, "false_alarm": false}
+{"seed": 51, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 14, "false_alarm": false}
+{"seed": 52, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 30, "false_alarm": false}
+{"seed": 53, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 23, "false_alarm": false}
+{"seed": 54, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 12, "false_alarm": false}
+{"seed": 55, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 23, "false_alarm": false}
+{"seed": 56, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 26, "false_alarm": false}
+{"seed": 57, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 31, "false_alarm": false}
+{"seed": 58, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 25, "false_alarm": false}
+{"seed": 59, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 32, "false_alarm": true}
+{"seed": 60, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 24, "false_alarm": false}
+{"seed": 61, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 29, "false_alarm": false}
+{"seed": 62, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 14, "false_alarm": false}
+{"seed": 63, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 14, "false_alarm": false}
+{"seed": 64, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 27, "false_alarm": false}
+{"seed": 65, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 11, "false_alarm": false}
+{"seed": 66, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": null, "false_alarm": false}
+{"seed": 67, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 11, "false_alarm": false}
+{"seed": 68, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 26, "false_alarm": false}
+{"seed": 69, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 22, "false_alarm": false}
+{"seed": 70, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 13, "false_alarm": false}
+{"seed": 71, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 23, "false_alarm": false}
+{"seed": 72, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 27, "false_alarm": true}
+{"seed": 73, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 17, "false_alarm": false}
+{"seed": 74, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 27, "false_alarm": false}
+{"seed": 75, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 8, "false_alarm": false}
+{"seed": 76, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 15, "false_alarm": false}
+{"seed": 77, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 16, "false_alarm": false}
+{"seed": 78, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": null, "false_alarm": true}
+{"seed": 79, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 22, "false_alarm": false}
+{"seed": 80, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 18, "false_alarm": false}
+{"seed": 81, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 29, "false_alarm": false}
+{"seed": 82, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 9, "false_alarm": false}
+{"seed": 83, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 16, "false_alarm": false}
+{"seed": 84, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 5, "false_alarm": false}
+{"seed": 85, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 32, "false_alarm": true}
+{"seed": 86, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 8, "false_alarm": false}
+{"seed": 87, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 32, "false_alarm": false}
+{"seed": 88, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 15, "false_alarm": false}
+{"seed": 89, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 23, "false_alarm": false}
+{"seed": 90, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 31, "false_alarm": false}
+{"seed": 91, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 16, "false_alarm": false}
+{"seed": 92, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 11, "false_alarm": false}
+{"seed": 93, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 30, "false_alarm": true}
+{"seed": 94, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 13, "false_alarm": true}
+{"seed": 95, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 19, "false_alarm": true}
+{"seed": 96, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 28, "false_alarm": true}
+{"seed": 97, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 26, "false_alarm": false}
+{"seed": 98, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 5, "false_alarm": false}
+{"seed": 99, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 9, "false_alarm": false}
+{"seed": 100, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 6, "false_alarm": false}
+{"seed": 101, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 7, "false_alarm": false}
+{"seed": 102, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 10, "false_alarm": false}
+{"seed": 103, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 19, "false_alarm": false}
+{"seed": 104, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 22, "false_alarm": false}
+{"seed": 105, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 10, "false_alarm": true}
+{"seed": 106, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 9, "false_alarm": false}
+{"seed": 107, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 9, "false_alarm": false}
+{"seed": 108, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 32, "false_alarm": false}
+{"seed": 109, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 23, "false_alarm": false}
+{"seed": 110, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": null, "false_alarm": false}
+{"seed": 111, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 22, "false_alarm": false}
+{"seed": 112, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 11, "false_alarm": false}
+{"seed": 113, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 25, "false_alarm": false}
+{"seed": 114, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 20, "false_alarm": true}
+{"seed": 115, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 31, "false_alarm": false}
+{"seed": 116, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 21, "false_alarm": false}
+{"seed": 117, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 7, "false_alarm": false}
+{"seed": 118, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 28, "false_alarm": false}
+{"seed": 119, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 9, "false_alarm": false}
+{"seed": 120, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 13, "false_alarm": true}
+{"seed": 121, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 5, "false_alarm": false}
+{"seed": 122, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 10, "false_alarm": false}
+{"seed": 123, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 7, "false_alarm": false}
+{"seed": 124, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": null, "false_alarm": true}
+{"seed": 125, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 18, "false_alarm": false}
+{"seed": 126, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 13, "false_alarm": false}
+{"seed": 127, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 24, "false_alarm": false}
+{"seed": 128, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 19, "false_alarm": false}
+{"seed": 129, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 9, "false_alarm": false}
+{"seed": 130, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 11, "false_alarm": false}
+{"seed": 131, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 6, "false_alarm": false}
+{"seed": 132, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 27, "false_alarm": false}
+{"seed": 133, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 29, "false_alarm": true}
+{"seed": 134, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 17, "false_alarm": false}
+{"seed": 135, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 22, "false_alarm": false}
+{"seed": 136, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 24, "false_alarm": false}
+{"seed": 137, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 19, "false_alarm": false}
+{"seed": 138, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 18, "false_alarm": false}
+{"seed": 139, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 31, "false_alarm": false}
+{"seed": 140, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": null, "false_alarm": false}
+{"seed": 141, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 13, "false_alarm": false}
+{"seed": 142, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 32, "false_alarm": false}
+{"seed": 143, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 23, "false_alarm": false}
+{"seed": 144, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 13, "false_alarm": false}
+{"seed": 145, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 21, "false_alarm": false}
+{"seed": 146, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 15, "false_alarm": false}
+{"seed": 147, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 27, "false_alarm": false}
+{"seed": 148, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 31, "false_alarm": false}
+{"seed": 149, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 15, "false_alarm": false}
+{"seed": 150, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 17, "false_alarm": false}
+{"seed": 151, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 6, "false_alarm": true}
+{"seed": 152, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 15, "false_alarm": false}
+{"seed": 153, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 29, "false_alarm": false}
+{"seed": 154, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 11, "false_alarm": false}
+{"seed": 155, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 32, "false_alarm": false}
+{"seed": 156, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 30, "false_alarm": true}
+{"seed": 157, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": null, "false_alarm": false}
+{"seed": 158, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 30, "false_alarm": true}
+{"seed": 159, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 21, "false_alarm": false}
+{"seed": 160, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 7, "false_alarm": false}
+{"seed": 161, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 5, "false_alarm": false}
+{"seed": 162, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 17, "false_alarm": false}
+{"seed": 163, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 5, "false_alarm": false}
+{"seed": 164, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 28, "false_alarm": false}
+{"seed": 165, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 20, "false_alarm": false}
+{"seed": 166, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 11, "false_alarm": false}
+{"seed": 167, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": null, "false_alarm": false}
+{"seed": 168, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 20, "false_alarm": false}
+{"seed": 169, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 21, "false_alarm": true}
+{"seed": 170, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 15, "false_alarm": false}
+{"seed": 171, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 22, "false_alarm": false}
+{"seed": 172, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 32, "false_alarm": false}
+{"seed": 173, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 8, "false_alarm": false}
+{"seed": 174, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 8, "false_alarm": false}
+{"seed": 175, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 25, "false_alarm": true}
+{"seed": 176, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 29, "false_alarm": false}
+{"seed": 177, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 21, "false_alarm": false}
+{"seed": 178, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 9, "false_alarm": false}
+{"seed": 179, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 21, "false_alarm": false}
+{"seed": 180, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 17, "false_alarm": false}
+{"seed": 181, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 18, "false_alarm": true}
+{"seed": 182, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": null, "false_alarm": false}
+{"seed": 183, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 14, "false_alarm": false}
+{"seed": 184, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 21, "false_alarm": false}
+{"seed": 185, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 23, "false_alarm": false}
+{"seed": 186, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 15, "false_alarm": false}
+{"seed": 187, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": null, "false_alarm": false}
+{"seed": 188, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 6, "false_alarm": false}
+{"seed": 189, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 19, "false_alarm": true}
+{"seed": 190, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": null, "false_alarm": false}
+{"seed": 191, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 30, "false_alarm": true}
+{"seed": 192, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 31, "false_alarm": false}
+{"seed": 193, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 9, "false_alarm": false}
+{"seed": 194, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 27, "false_alarm": true}
+{"seed": 195, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": null, "false_alarm": false}
+{"seed": 196, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 17, "false_alarm": false}
+{"seed": 197, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": null, "false_alarm": true}
+{"seed": 198, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": 8, "false_alarm": false}
+{"seed": 199, "kind": "break", "type": "vix_control", "truth": true, "label": null, "killed_by": null, "delay_m": null, "false_alarm": false}

@@ -1,0 +1,1 @@
+{"request": {"system": "Answer with JSON only.", "user": "What was year-on-year percentage change in the US consumer price index for May 2023? If you do not know, answer null. Reply as {\"value\": number|null}", "temperature": 0.0}, "response": {"value": 3.042740100719469}, "model": "gpt-4o-mini", "ts": "2026-11-07T13:45:00+00:00"}
