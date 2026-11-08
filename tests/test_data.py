@@ -1,4 +1,4 @@
-"""M2.11 unit tests: fetch/cache, NBER, point-in-time loader, vendor check, mocks."""
+"""Fetch, cache, NBER dates, the point-in-time loader, the vendor check and mocks."""
 import json
 
 import numpy as np
@@ -10,16 +10,16 @@ from catalog import CATALOG, ids
 from data import fetch, nber, pit, store, vendor
 
 
-# ---------------------------------------------------------------- mocks parse (C8)
+# ---------------------------------------------------------------- mocks parse
 def test_mock_frames_parse():
-    lines = (store.ROOT / "mocks" / "sample_m2_frames.jsonl").read_text().splitlines()
+    lines = (store.ROOT / "mocks" / "demo_frames.jsonl").read_text().splitlines()
     frames = [S.ReplayFrame.model_validate_json(l) for l in lines if l.strip()]
     assert frames[0].as_of.isoformat() == "2015-01-31" and frames[-1].as_of.isoformat() == "2023-12-31"
     assert next(f for f in frames if f.change["alarm"]).as_of.isoformat() == "2022-06-30"
 
 
 def test_mock_panel_columns():
-    p = pd.read_parquet(store.ROOT / "mocks" / "m2_panel.parquet")
+    p = pd.read_parquet(store.ROOT / "mocks" / "synthetic_panel.parquet")
     assert set(ids()) | {"RF"} <= set(p.columns)
     assert p.index.min() == pd.Timestamp("2000-01-31") and p.index.max() == pd.Timestamp("2026-10-31")
 

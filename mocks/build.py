@@ -45,7 +45,7 @@ def main():
         trial_id = f"tr_fixture{i:03d}"
         observed[h.id] = t
         trial = TrialLogEntry(
-            trial_id=trial_id, hypothesis_id=h.id, dup_of=dup_of, batch_id="m3_fixture",
+            trial_id=trial_id, hypothesis_id=h.id, dup_of=dup_of, batch_id="fixture",
             split="discovery", n_obs=139, coverage=.972, sharpe_ann=sharpe+.04,
             sharpe_net_ann=sharpe, nw_t=t, p_block=p,
             p_search=float((1 + (null_max >= t).sum()) / (len(null_max)+1)),

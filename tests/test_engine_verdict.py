@@ -1,4 +1,4 @@
-"""Verdict table (C6), vault errors (M1.11), kill tests (M1.12), pipeline integration #1."""
+"""Verdict labels, vault errors, kill tests and a pipeline run."""
 import json
 from datetime import datetime, timedelta, timezone
 

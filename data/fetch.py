@@ -1,4 +1,4 @@
-"""M2.1 Fetch and cache every catalog series.
+"""Fetch and cache every catalog series.
 
     python -m data.fetch            # download everything to data/cache/
     python -m data.fetch --check    # print id, first, last, n, NaN table
@@ -9,7 +9,7 @@ Vendors:
   stooq  pandas_datareader 'stooq' daily Close (fallback: direct CSV URL) -> month-end last
   fred   fredapi with FRED_API_KEY (fallback: keyless fredgraph.csv)
          daily series: ffill <= 5 business days, then month-end last
-         monthly series: moved to month-end, published = next month-end [TA]
+         monthly series: moved to month-end, published = next month-end
   nber   hard-coded table (data/nber.py); date = event month-end, value = +1 peak / -1 trough,
          published = announcement date
 """

@@ -1,4 +1,4 @@
-"""DSL, features, backtest, stats, power, multiple testing, dedupe (M1.1-M1.9)."""
+"""DSL, features, backtest, stats, power, multiple testing and dedupe."""
 import math
 
 import numpy as np

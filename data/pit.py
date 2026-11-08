@@ -1,7 +1,7 @@
-"""M2.3 Point-in-time loader.
+"""Point-in-time loader.
 
     as_of("UNRATE", "2008-11-30")   -> values published on or before that date, indexed by `date`
-    panel()                          -> full wide month-end panel of all C5 ids + RF
+    panel()                          -> full wide month-end panel of catalog ids + RF
     panel("2022-06-30")              -> same, but every cell whose `published` > t is NaN and
                                         rows after t are dropped ("as known on t")
 
@@ -75,7 +75,7 @@ def published_frame(t=None, ids: list[str] | None = None) -> pd.DataFrame:
 
 
 def panel(t=None, ids: list[str] | None = None) -> pd.DataFrame:
-    """Wide month-end panel of C5 ids + RF, cut to published <= t when t is given."""
+    """Wide month-end panel of catalog ids + RF, cut to published <= t when t is given."""
     V, P = _wide(str(store.cache_dir()))
     if t is not None:
         tt = as_ts(t)
@@ -101,7 +101,7 @@ def vendor_series(series_id: str, source: str, t=None) -> pd.Series | None:
         df = df[df["published"] <= as_ts(t)]
     return pd.Series(df["value"].values, index=pd.DatetimeIndex(df["date"].values), name=f"{source}:{series_id}")
 def decision_panel() -> pd.DataFrame:
-    """Values aligned to their first usable decision month for M1 backtests."""
+    """Values aligned to their first usable decision month for backtests."""
     V, P = _wide(str(store.cache_dir()))
     out = V.copy()
     for column in V:

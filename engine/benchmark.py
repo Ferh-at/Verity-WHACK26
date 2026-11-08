@@ -1,7 +1,7 @@
-"""Planted-trap benchmark (M1.14): synthetic data with known real and fake signals -> measured FDR.
+"""Planted-trap benchmark: synthetic data with known real and fake signals, then a measured FDR.
 
     python -m engine.benchmark --seeds 50 --out runs/benchmark.jsonl
-    python -m engine.benchmark --noise-search 200          # must-have 4
+    python -m engine.benchmark --noise-search 200          # pure-noise searches
 
 Rows are BenchmarkRun (one per hypothesis per seed). Real signals are typed "real:<SR>" so recall can be
 reported per SR level. The naive pipeline (discovery iid t-test p < ALPHA, nothing else) is written to

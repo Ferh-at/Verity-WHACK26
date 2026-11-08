@@ -1,4 +1,4 @@
-"""Pre-registration and the one-shot holdout vault (M1.11), with the hindsight condition (M1.12)."""
+"""Pre-registration and the one-shot holdout vault, including the hindsight condition."""
 import json
 import os
 from threading import RLock

@@ -1,4 +1,4 @@
-"""M2.2 NBER recession dates, point in time.
+"""NBER recession dates, point in time.
 
 Convention (same as FRED USREC): recession months are the months AFTER the peak up to and
 including the trough. A recession is known only once its peak has been announced; if the trough

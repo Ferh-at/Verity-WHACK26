@@ -1,4 +1,4 @@
-"""Sharpe, Newey-West t, naive t-test (M1.4)."""
+"""Sharpe ratio, Newey-West t and a naive t-test."""
 import math
 
 import numpy as np

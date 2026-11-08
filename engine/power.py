@@ -1,4 +1,4 @@
-"""Power, PSR, MinTRL, deflated Sharpe (M1.9).
+"""Power, PSR, MinTRL and deflated Sharpe.
 SR_m = monthly Sharpe, n = months, g3 = skewness, g4 = Pearson kurtosis (normal = 3)."""
 import math
 

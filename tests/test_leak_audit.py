@@ -1,4 +1,4 @@
-"""M2.4 leak audit: controls (unit) and must-have 3 (20/20 leaky flagged, 0/20 clean flagged)."""
+"""Leak audit: leaky controls are flagged and clean features are not."""
 import numpy as np
 import pandas as pd
 import pytest

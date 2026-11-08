@@ -1,4 +1,4 @@
-"""Request objections; the M1 pipeline owns all tests and verdicts."""
+"""Request objections. The statistics pipeline owns every test and verdict."""
 import json
 import math
 from datetime import date, datetime
@@ -7,7 +7,7 @@ from typing import Literal
 
 from pydantic import BaseModel, ConfigDict, Field, field_validator
 
-from agents.llm import DISC_FIELDS, LLMError, chat_json, log
+from agents.llm import DISC_FIELDS, LLMError, chat_json, log, prose
 from config import SPLITS, TEMPERATURE
 from schemas import Hypothesis, Objection
 
@@ -91,7 +91,7 @@ def _block(h: Hypothesis, clean: dict) -> str:
     return (
         f"Id: {h.id}\n"
         f"Hypothesis spec: {h.spec.model_dump_json()}\n"
-        f"Rationale: {json.dumps(h.rationale, ensure_ascii=False)}\n"
+        f"Rationale: {json.dumps(prose(h.rationale), ensure_ascii=False)}\n"
         f"Discovery summary: {json.dumps(clean, sort_keys=True)}"
     )
 

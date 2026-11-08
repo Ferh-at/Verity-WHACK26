@@ -18,5 +18,5 @@ For a three-minute cut, skip the live generation and the full playthrough. Show 
 - Repeat the complete click path twice with connectivity disabled.
 - Time a fresh thesis with the team's market panel and credentials.
 - Check the calibration sample size, seed count and source labels before quoting results.
-- Verify the M1 preregistration and vault records against the tested spec hashes.
+- Verify preregistration and vault records against the tested spec hashes.
 - Record the actual integrated walkthrough after these checks and capture the four app screens for submission.

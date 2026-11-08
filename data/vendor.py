@@ -1,4 +1,4 @@
-"""M2.5 Vendor integrity: Yahoo vs Stooq monthly returns.
+"""Vendor integrity: Yahoo vs Stooq monthly returns.
 
 vendor_check(asset_id, end, window=36) -> {status, max_gap_pct, n_bad, vendors_agree, n}
   status "single_vendor" when there is no Stooq copy (never a failure),

@@ -1,4 +1,4 @@
-"""M2.7 Lower one-sided CUSUM (Page 1954) on a rule's strength series.
+"""Lower one-sided CUSUM (Page 1954) on a rule's strength series.
 
 z_t = (s_t - mu0) / sd0
 C_0 = 0,  C_t = max(0, C_{t-1} - z_t - k);  alarm_t = C_t > h

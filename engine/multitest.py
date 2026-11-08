@@ -1,4 +1,4 @@
-"""Multiple testing across the ledger (M1.7): Benjamini-Yekutieli q-values, Holm for display."""
+"""Multiple testing across the ledger: Benjamini-Yekutieli q-values, Holm for display."""
 from statsmodels.stats.multitest import multipletests
 
 from config import FDR_Q

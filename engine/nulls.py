@@ -1,4 +1,4 @@
-"""Null distributions (M1.5): stationary bootstrap (Politis & Romano 1994) and circular shift.
+"""Null distributions: stationary bootstrap (Politis & Romano 1994) and circular shift.
 
 The resampling is a vectorised numpy implementation of the same algorithm as
 arch.bootstrap.StationaryBootstrap (geometric block lengths with mean `block_len`, wrap-around);

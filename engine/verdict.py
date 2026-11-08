@@ -1,15 +1,15 @@
-"""Kill tests requested by the skeptic (M1.12) and the verdict rules (C6, M1.13).
+"""Kill tests requested by the skeptic, and the rules that turn those tests into a verdict.
 
-[TA] The outlier and regime tests ask "is the discovery result driven by a few months / one
-sub-period?". They only apply when there is a significant positive discovery result
-(p_block < ALPHA, mean > 0); otherwise they pass as "not applicable". Without this, noise would be
-killed by them and "Can't tell yet" (must-have 6) could never occur."""
+The outlier and regime tests ask whether a discovery result is driven by a few months or one
+sub-period. They only apply when there is a significant positive discovery result
+(p_block < ALPHA, mean > 0); otherwise they pass as not applicable. Without that limit, noise
+would be killed by them and a "Can't tell yet" verdict could never occur."""
 from datetime import date
 
 import numpy as np
 import pandas as pd
 
-from config import ALPHA, CANT_TELL_MDE, FDR_Q, N_BOOT, OUTLIER_DROP_FRAC, SEED, SPLITS
+from config import ALPHA, CANT_TELL_MDE, COST_STRESS, FDR_Q, N_BOOT, OUTLIER_DROP_FRAC, SEED, SPLITS
 from engine.backtest import asset_availability, eligible_net, split_bounds, strategy_returns
 from engine.features import feature
 from engine.nulls import p_block
@@ -68,6 +68,20 @@ def regime_test(net: pd.Series, hypothesis_id: str = "", base_p: float | None = 
                f"net Sharpe by third of discovery: {txt} ({bad} of 3 <= 0)")
 
 
+def cost_test(net: pd.Series, gross: pd.Series, hypothesis_id: str = "", base_p: float | None = None,
+              n_boot: int = N_BOOT, seed: int = SEED, multiple: float = COST_STRESS) -> TestResult:
+    """Re-test with trading costs scaled by `multiple`; kill if the mean turns non-positive or
+    p_block >= ALPHA. net_k = gross - k * (gross - net)."""
+    ok, p0 = _applicable(net, base_p, n_boot, seed)
+    if not ok:
+        return _tr(hypothesis_id, "costs", True, p0, "not applicable (no significant discovery result)")
+    stressed = gross - multiple * (gross - net)
+    p = p_block(stressed, n=n_boot, seed=seed)
+    passed = stressed.mean() > 0 and p < ALPHA
+    return _tr(hypothesis_id, "costs", passed, p,
+               f"at {multiple:g}x costs: mean {stressed.mean() * 100:.3f}%/month, p={p:.3f}")
+
+
 def audit_dates(panel: pd.DataFrame, splits: dict | None = None, n: int | None = None) -> list:
     """Evenly spaced month-ends across discovery and validation (after a 36-month warm-up)."""
     from config import AUDIT_N_DATES
@@ -111,8 +125,18 @@ def run_objection(obj: Objection, h: Hypothesis, panel: pd.DataFrame, splits: di
     if obj.type == "hindsight":
         return _tr(h.id, "hindsight", True, None, "recorded; checked inside the holdout (post-cutoff months)",
                    kill=False, ref="runs/vault.jsonl")
+    if obj.type == "costs":
+        df = strategy_returns(h.spec, panel[spec_columns(h)], "discovery", splits)
+        e = df[df["pos"].notna() & df["net"].notna()]
+        return cost_test(e["net"], e["gross"], h.id, base_p=base_p, n_boot=n_boot, seed=seed)
     if net is None:
         net = eligible_net(strategy_returns(h.spec, panel, "discovery", splits))
+    if obj.type == "factor":
+        from engine.factor import factor_proxies, factor_test
+        ok, _ = _applicable(net, base_p, n_boot, seed)
+        if not ok:
+            return _tr(h.id, "factor", True, None, "not applicable (no significant discovery result)")
+        return factor_test(net, factor_proxies(panel), h.id, kill=True)
     fn = outlier_test if obj.type == "outlier" else regime_test
     return fn(net, h.id, base_p=base_p, n_boot=n_boot, seed=seed)
 
@@ -122,7 +146,7 @@ def _get(results: list[TestResult], name: str) -> TestResult | None:
 
 
 def classify(results: list[TestResult], power: Power, holdout: TestResult | None) -> tuple[str, str | None]:
-    """C6 rules in order. Returns (label, killed_by = first failing test, None if trusted)."""
+    """Verdict rules in order. Returns (label, killed_by = first failing test, None if trusted)."""
     for r in results:
         if r.kill and not r.passed:
             return "Rejected", r.test

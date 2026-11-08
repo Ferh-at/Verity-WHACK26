@@ -1,4 +1,4 @@
-"""M2.6-M2.10 monitor: unit tests and must-haves 8 & 9."""
+"""Monitor rules, calibration, planted breaks and point-in-time replay."""
 import json
 
 import numpy as np
@@ -79,7 +79,7 @@ def test_curve_recession_strength():
     assert st["n_spells"] >= 1 and 0 <= st["est"] <= 1
 
 
-# ---------------------------------------------------------------- calibration (must-have 8)
+# ---------------------------------------------------------------- calibration
 @pytest.fixture(scope="module")
 def calib(tmp_path_factory):
     path = tmp_path_factory.mktemp("c") / "calib.json"
@@ -92,7 +92,7 @@ def test_calibration_false_alarm_rate(calib):
     _, res = calib
     for r, c in res.items():
         assert c["n_sims"] >= 1000
-        # must-have: <= 1 false alarm per 20 years per rule (spec acceptance band is [0.5, 1.5]; see README)
+        # at most one false alarm per 20 years per rule
         assert c["fa_rate_per_20y"] <= 1.0, (r, c["fa_rate_per_20y"])
         assert c["h"] > 0 and len(c["max_c"]) == c["n_sims"]
 
@@ -110,7 +110,7 @@ def test_calibration_checkpoint_resume(tmp_path, monkeypatch):
     assert a["max_c"] == b["max_c"] and any(tmp_path.iterdir())
 
 
-# ---------------------------------------------------------------- breaks (must-have 9)
+# ---------------------------------------------------------------- breaks
 def test_break_sims_report(calib):
     _, res = calib
     runs = breaks.break_sims("bonds_protect", N_BREAK_SIMS, params=res["bonds_protect"])
@@ -120,7 +120,7 @@ def test_break_sims_report(calib):
     print("\nbonds_protect planted breaks:", {k: v for k, v in m.items() if k != "delays"})
 
 
-# ---------------------------------------------------------------- replay (must-have 8)
+# ---------------------------------------------------------------- replay
 @pytest.fixture(scope="module")
 def frames(calib, tmp_path_factory):
     path, _ = calib

@@ -1,4 +1,4 @@
-"""M2.9 Planted breaks: how fast does the calibrated CUSUM notice a rule flipping?
+"""Planted breaks: how fast does the calibrated CUSUM notice a rule flipping?
 
     python -m monitor.breaks --sims 200 --rules bonds_protect vix_control
 

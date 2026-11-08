@@ -1,4 +1,4 @@
-"""Null size and luck-hurdle known-answer tests (M1.5, M1.6; must-haves 4-5)."""
+"""Null size and luck-hurdle known-answer tests."""
 import numpy as np
 import pytest
 from scipy.signal import lfilter

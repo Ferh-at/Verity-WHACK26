@@ -1,4 +1,4 @@
-"""Features and positions (M1.2). Every feature at month-end t uses rows <= t only,
+"""Features and positions. Every feature at month-end t uses rows <= t only,
 except the two leaky controls (centered_ma, fullsample_z)."""
 import numpy as np
 import pandas as pd

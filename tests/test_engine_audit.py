@@ -1,4 +1,4 @@
-"""Leak-audit controls (M2.4) against the working stub in data/audit.py."""
+"""Leak-audit controls against data/audit.py."""
 import numpy as np
 import pandas as pd
 

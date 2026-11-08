@@ -17,9 +17,10 @@ DEFAULT_THESIS = "An inverted yield curve predicts equity drawdowns"
 EXPLORE_THESIS = "Explore macro relationships useful to a global macro trader."
 LEAKY = {"centered_ma", "fullsample_z"}
 
-SYSTEM = """You are a quantitative research assistant. You turn a trader's market thesis into testable hypotheses
+INTRO = """You are a quantitative research assistant. You turn a trader's market thesis into testable hypotheses
 in a fixed grammar. You never see or produce data values, dates after 2019, or performance numbers.
-Each hypothesis is a JSON object with fields:
+"""
+GRAMMAR = """Each hypothesis is a JSON object with fields:
   feature: one of "mom" (past L-month return of a price series), "level" (current value),
            "change" (L-month change), "zscore" (value vs its trailing L-month mean/sd, L>=12),
            "corr" (trailing L-month correlation of monthly changes of series and series2, L>=12)
@@ -30,7 +31,8 @@ Each hypothesis is a JSON object with fields:
   asset: the traded asset, one of {ASSET_LIST}
   direction: 1 if a HIGH feature value means go LONG the asset next month, -1 if it means go SHORT
 Rules: the position is set at month-end using only data up to that month and held for the next month.
-Make hypotheses diverse (different series, lookbacks and assets); do not submit near-copies that differ
+"""
+SYSTEM = INTRO + GRAMMAR + """Make hypotheses diverse (different series, lookbacks and assets); do not submit near-copies that differ
 only by lookback unless the thesis requires it. Each rationale is one sentence of economic reasoning.
 Return JSON: {{"hypotheses": [{{"spec": {{...}}, "rationale": "..."}}]}}"""
 
@@ -46,14 +48,20 @@ class Candidate(BaseModel):
     rationale: str = Field(min_length=1, max_length=500)
 
 
-def prompt(thesis, n, mode, entries=None):
-    if entries is None:
-        entries = catalog()
+def universe(entries):
+    """(series descriptions, tradable assets) as listed in the DSL prompt."""
     descriptions = ", ".join(
         f"{key}: {field(entry, 'description') or FALLBACK.get(key, ('', key))[1]}"
         for key, entry in entries.items() if field(entry, "type") != "events"
     )
     assets = ", ".join(key for key, entry in entries.items() if field(entry, "tradable", False))
+    return descriptions, assets
+
+
+def prompt(thesis, n, mode, entries=None):
+    if entries is None:
+        entries = catalog()
+    descriptions, assets = universe(entries)
     system = SYSTEM.format(SERIES_LIST=descriptions, ASSET_LIST=assets)
     text = EXPLORE_THESIS if mode == "explore" else thesis.text.strip()
     user = f"Thesis: {json.dumps(text, ensure_ascii=False)}\nMode: {mode}\nReturn exactly {n} hypotheses."
@@ -95,6 +103,17 @@ def validate_candidate(spec, entries):
         dsl.validate_spec(spec, entries)
 
 
+def spec_from(raw: dict, entries) -> Spec:
+    """Strictly parse and validate one model-proposed spec; raises ValueError."""
+    if raw.keys() - Spec.model_fields.keys():
+        raise ValueError("Unknown spec fields.")
+    spec = Spec.model_validate(raw, strict=True)
+    if type(raw["direction"]) is not int:
+        raise ValueError("Direction must be an integer.")
+    validate_candidate(spec, entries)
+    return spec
+
+
 def make_hypothesis(spec, source, rationale, thesis_id=None):
     dsl = _dsl()
     if dsl is not None and source != "planted":
@@ -127,12 +146,7 @@ def generate(thesis: Thesis, n=N_HYPOTHESES_DEFAULT,
             spec = None
             try:
                 row = Candidate.model_validate(raw)
-                if row.spec.keys() - Spec.model_fields.keys():
-                    raise ValueError("Unknown spec fields.")
-                spec = Spec.model_validate(row.spec, strict=True)
-                if type(row.spec["direction"]) is not int:
-                    raise ValueError("Direction must be an integer.")
-                validate_candidate(spec, entries)
+                spec = spec_from(row.spec, entries)
                 h = make_hypothesis(spec, mode, row.rationale, thesis.id)
                 if h.spec_hash in found:
                     raise ValueError("Duplicate spec.")

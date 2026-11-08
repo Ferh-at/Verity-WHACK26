@@ -1,11 +1,11 @@
-"""Build SYNTHETIC mock data so every member can work before real data is cached.
+"""Build synthetic mock data for tests and demos before a market cache exists.
 
     python -m mocks.make_mocks
 
 Writes:
-  mocks/cache/{source}_{id}.parquet/.csv   same format as data/cache (synthetic, NOT real prices)
-  mocks/m2_panel.parquet                      wide panel of all C5 ids + RF (= data.pit.panel() on mocks)
-  mocks/sample_m2_frames.jsonl                bonds_protect frames 2015-01..2023-12, fake numbers, alarm 2022-06
+  mocks/cache/{source}_{id}.parquet/.csv   same format as data/cache (synthetic, not real prices)
+  mocks/synthetic_panel.parquet            wide panel of catalog ids + RF (= data.pit.panel() on mocks)
+  mocks/demo_frames.jsonl                  bonds_protect frames 2015-01..2023-12, fake numbers, alarm 2022-06
 
 The synthetic world is shaped like the real one (stock-bond correlation negative until 2021,
 positive from 2022; curve inversions in 2000, 2006-07, 2019, 2022-24) so demos look right,
@@ -133,9 +133,9 @@ def main():
     os.environ["WHACK_CACHE_DIR"] = str(MOCK / "cache")
     from data import pit
     pit.clear_cache()
-    pit.panel().to_parquet(MOCK / "m2_panel.parquet")
-    (MOCK / "sample_m2_frames.jsonl").write_text("\n".join(f.model_dump_json() for f in sample_frames()) + "\n")
-    print("mock cache:", len(list((MOCK / "cache").glob("*.parquet"))), "files; m2_panel + sample_m2_frames written")
+    pit.panel().to_parquet(MOCK / "synthetic_panel.parquet")
+    (MOCK / "demo_frames.jsonl").write_text("\n".join(f.model_dump_json() for f in sample_frames()) + "\n")
+    print("mock cache:", len(list((MOCK / "cache").glob("*.parquet"))), "files; synthetic_panel + demo_frames written")
 
 
 if __name__ == "__main__":

@@ -1,4 +1,4 @@
-"""M2.10 Point-in-time replay and freeze frames.
+"""Point-in-time replay and freeze frames.
 
     python -m monitor.replay                      # all rules, REPLAY_START..DATA_END -> runs/frames.jsonl
 
@@ -160,7 +160,7 @@ def freeze_frame(rule_id: str, path: Path = FRAMES_PATH) -> ReplayFrame | None:
 
 
 def explainer_facts(frame: ReplayFrame, path: Path = FRAMES_PATH) -> dict:
-    """Flat, display-rounded facts for M3's guarded explainer."""
+    """Flat, display-rounded facts for the explainer."""
     ce = pd.Timestamp(CALIB_WINDOW[1])
     t = pd.Timestamp(frame.as_of)
     vix = next((f for f in load_frames(path, "vix_control") if f.as_of == frame.as_of), None)

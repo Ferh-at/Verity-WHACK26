@@ -1,12 +1,12 @@
-"""Series catalog (Common contract C5). Owner: M2. Read by everyone.
+"""Series catalog used by the loader, the engine and the hypothesis generator.
 
 Each entry:
-  sources : {vendor: symbol}. The first vendor listed is the PRIMARY one used by pit.panel().
+  sources : {vendor: symbol}. The first vendor listed is the primary one used by pit.panel().
             A second price vendor ("stooq") is used only by the integrity / vendor check.
   type    : "price" | "level" | "events"
   tradable: can be the `asset` of a Spec
   freq    : "daily" (resample to month-end last) | "monthly" (published = next month-end)
-  desc    : short human description (fed to the LLM generator by M3)
+  desc    : short description included in generator prompts
 """
 
 CATALOG: dict[str, dict] = {

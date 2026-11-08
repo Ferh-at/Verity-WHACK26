@@ -1,4 +1,4 @@
-"""M2.6 Monitor rules: strength series, strength with bootstrap range, integrity.
+"""Monitor rules: strength series, strength with a bootstrap range, and integrity.
 
 Every alarm rule is a pair of monthly inputs (a, b) and a window statistic; higher = rule working.
   negcorr: s = -corr_W(a, b)

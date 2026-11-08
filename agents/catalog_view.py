@@ -1,7 +1,6 @@
-"""C5 catalog view for the standalone M3 package and the team catalog."""
+"""Catalog lookup, with a short fallback when catalog.py cannot be imported."""
 from importlib import import_module
 
-# This view is needed before Member 2's catalog module is merged.
 FALLBACK = {
     "SPX": ("price", "S&P 500 index"),
     "NASDAQ": ("price", "Nasdaq Composite"),

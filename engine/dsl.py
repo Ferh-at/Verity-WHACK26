@@ -1,4 +1,4 @@
-"""Hypothesis DSL: spec validation, hashing, Hypothesis construction (M1.1)."""
+"""Hypothesis DSL: spec validation, hashing and Hypothesis construction."""
 import hashlib
 import json
 from datetime import datetime, timezone

@@ -1,4 +1,4 @@
-"""Shared data contracts (BUILD_SPEC C4). Frozen at 13:45; change only by agreement."""
+"""Shared data contracts for hypotheses, trials, tests, verdicts and monitor frames."""
 from typing import Literal, Optional
 from pydantic import BaseModel, Field
 from datetime import datetime, date
@@ -16,7 +16,7 @@ FeatureType = Literal["mom", "level", "change", "zscore", "corr",
 
 class Spec(BaseModel):
     feature: FeatureType
-    series: str                  # catalog id (C5), e.g. "T10Y3M"
+    series: str                  # catalog id, e.g. "T10Y3M"
     series2: Optional[str] = None  # only for "corr"
     lookback: int                # one of LOOKBACKS; ignored for "level" (store 1)
     transform: Literal["sign", "clip_z"]
@@ -27,7 +27,7 @@ class Spec(BaseModel):
 class Hypothesis(BaseModel):
     id: str                      # "hy_" + first 10 hex of spec_hash
     thesis_id: Optional[str]
-    source: Literal["thesis", "explore", "rule", "planted"]
+    source: Literal["thesis", "explore", "rule", "planted", "review"]  # review = added by the reviewer
     spec: Spec
     rationale: str               # LLM text; shown, never tested
     spec_hash: str               # sha256 of json.dumps(spec.model_dump(), sort_keys=True)
@@ -56,7 +56,7 @@ class TrialLogEntry(BaseModel):
 
 class Objection(BaseModel):
     hypothesis_id: str
-    type: Literal["leakage", "outlier", "regime", "vendor", "hindsight"]
+    type: Literal["leakage", "outlier", "regime", "vendor", "hindsight", "costs", "factor"]
     rationale: str               # <= 300 chars
     params: dict = {}            # e.g. {"date": "2008-10-31"} for outlier
 
@@ -65,7 +65,7 @@ class TestResult(BaseModel):
     __test__ = False             # not a pytest test class
     hypothesis_id: str
     test: Literal["leak_audit", "block_null", "luck_hurdle", "by_fdr", "validation", "holdout",
-                  "outlier", "regime", "vendor", "hindsight", "factor", "sign"]
+                  "outlier", "regime", "vendor", "hindsight", "factor", "sign", "costs"]
     passed: bool
     kill: bool                   # True only if failing this test forces Rejected
     value: Optional[float]       # main number (p, t, Sharpe ...)
@@ -92,7 +92,7 @@ class Verdict(BaseModel):
     holdout_passed: Optional[bool]
     dsr: Optional[float]         # deflated Sharpe probability (0-1)
     evidence_refs: list[str]
-    explanation: Optional[str]   # filled by M3 explainer
+    explanation: Optional[str]   # filled by the explainer
     as_of: date
 
 

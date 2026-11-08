@@ -1,7 +1,7 @@
 """Read the team run contracts and replay immutable demo fixtures when needed."""
 import json
 from collections import defaultdict, deque
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 import pandas as pd
 import streamlit as st
@@ -54,16 +54,22 @@ class Discovery:
     hurdle: dict
     demo: bool
     data_source: str | None = None
+    rounds: list = field(default_factory=list)
+    lineage: dict = field(default_factory=dict)
+    round_of: dict = field(default_factory=dict)
+    thesis: str | None = None
 
 
 def cached_discovery():
-    latest = read(RUNS / "m3_latest.json")
+    latest = read(RUNS / "latest.json")
     if latest:
         return Discovery(
             [Hypothesis.model_validate(row) for row in latest["hypotheses"]],
             [TrialLogEntry.model_validate(row) for row in latest["trials"]],
             [Verdict.model_validate(row) for row in latest["verdicts"]],
             latest.get("hurdle", {}), False, latest.get("data_source"),
+            latest.get("rounds", []), latest.get("lineage", {}), latest.get("round_of", {}),
+            latest.get("thesis"),
         )
     hs = rows("hypotheses.jsonl", Hypothesis)
     ts = rows("trials.jsonl", TrialLogEntry)
@@ -94,9 +100,9 @@ def replay():
 
 
 def benchmark():
-    """Read M1's paired benchmark ledgers or the packaged measured run."""
+    """Read the paired benchmark ledgers, or the packaged measured run."""
     live = [row for row in run_file("benchmark.jsonl", default=[]) if row.get("kind") == "trap"]
-    recorded = MOCKS / "m1_benchmark"
+    recorded = MOCKS / "recorded_benchmark"
     if live:
         records = live
         naive = run_file("benchmark_naive.jsonl", default=[])
@@ -128,7 +134,7 @@ def benchmark():
 
 
 def monitor_benchmark():
-    """Read M2 simulations independently of the M1 planted-trap benchmark."""
+    """Read the monitor simulations separately from the planted-trap benchmark."""
     for name in ("benchmark_monitor.jsonl", "breaks.jsonl", "benchmark.jsonl"):
         records = [row for row in run_file(name, default=[]) if row.get("kind") in {"break", "stable"}]
         if records:

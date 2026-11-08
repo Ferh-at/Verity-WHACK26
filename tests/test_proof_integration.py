@@ -16,7 +16,7 @@ def write_lines(path, rows):
     path.write_text("".join(json.dumps(row) + "\n" for row in rows))
 
 
-def test_proof_reads_m2_breaks_without_m1_results(tmp_path, monkeypatch):
+def test_proof_reads_breaks_without_trap_results(tmp_path, monkeypatch):
     monkeypatch.setattr(artifacts, "RUNS", tmp_path)
     monkeypatch.setenv("OFFLINE", "1")
     raw = {
@@ -34,9 +34,8 @@ def test_proof_reads_m2_breaks_without_m1_results(tmp_path, monkeypatch):
     }))
     at = AppTest.from_file(str(ROOT / "app/pages/2_Proof.py")).run()
     assert not at.exception
-    assert any(m.label == "Detected within 24 months" and m.value == "50%" for m in at.metric)
-    assert any("Synthetic cache" in w.value for w in at.warning)
-    assert any("1 separate stable simulations" in c.value for c in at.caption)
+    monitor_rows, demo = artifacts.monitor_benchmark()
+    assert not demo and sum(row.kind == "break" for row, _ in monitor_rows) == 2
     benchmark_rows, _ = artifacts.benchmark()
     assert all(row.kind == "trap" for row, _ in benchmark_rows)
     assert artifacts.monitor_benchmark()[1] is False
@@ -63,7 +62,7 @@ def test_monitor_uses_first_onset_and_replay_calibration(tmp_path, monkeypatch):
         }},
     }))
     (tmp_path / "calib.json").write_text(json.dumps({"bonds_protect": {"h": 42}}))
-    at = AppTest.from_file(str(ROOT / "app/pages/3_Monitor.py")).run()
+    at = AppTest.from_file(str(ROOT / "app/archive/monitor_page.py")).run()
     assert not at.exception
     assert any("Calibration-period context" in c.value for c in at.caption)
     assert any("h 7.00" in c.value for c in at.caption)
@@ -90,11 +89,13 @@ def test_checkpoints_require_identical_calibration_input(tmp_path, monkeypatch):
     assert len(list(tmp_path.glob("*.npz"))) == 2
 
 
-def test_live_discovery_stops_before_a_synthetic_batch(monkeypatch):
+def test_live_research_stops_before_a_synthetic_batch(monkeypatch):
     import pytest
+
+    from agents import researcher
 
     monkeypatch.setattr(runner, "require", lambda _: object())
     monkeypatch.setattr(runner, "active_data_source", lambda: "synthetic_cache")
-    monkeypatch.setattr(runner, "generate", lambda *_: pytest.fail("Unexpected generation"))
-    with pytest.raises(runner.IntegrationMissing, match="Fetch it first"):
-        runner.live_discovery("Test the yield curve", 20, "thesis", lambda _: None)
+    monkeypatch.setattr(researcher, "generate", lambda *_: pytest.fail("Unexpected generation"))
+    with pytest.raises(runner.IntegrationMissing, match="data.fetch"):
+        runner.live_research("Test the yield curve", 20, lambda _: None)

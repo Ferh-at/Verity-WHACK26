@@ -1,4 +1,4 @@
-"""Integration checks across the supplied engine, the M2 cache and the M3 UI."""
+"""Integration checks across the engine, the market cache and the app."""
 from pathlib import Path
 
 import pandas as pd
@@ -34,15 +34,10 @@ def test_supplied_benchmark_pairs_naive_and_recovers_recall(monkeypatch, tmp_pat
     assert metrics["recall"][2.0] == pytest.approx(.97)
 
 
-def test_offline_button_runs_engine(monkeypatch, tmp_path):
+def test_offline_fixture_batch_runs_engine(monkeypatch, tmp_path):
     monkeypatch.setenv("OFFLINE", "1")
-    run = pipeline.fixture_batch
-    monkeypatch.setattr(pipeline, "fixture_batch", lambda n: run(n, runs_dir=tmp_path))
-    at = AppTest.from_file(str(ROOT / "app/pages/1_Discover.py"), default_timeout=20).run()
-    next(b for b in at.button if b.label == "Run engine on fixtures").click().run()
-    assert not at.exception
-    assert any("computed by the M1 engine" in item.value for item in at.warning)
-    assert sum(exp.label == "Raw JSON evidence" for exp in at.expander) == 20
+    _, verdicts, info = pipeline.fixture_batch(20, runs_dir=tmp_path)
+    assert len(verdicts) == 20 and info["trials"]
     assert (tmp_path / "prereg.jsonl").exists()
     assert (tmp_path / "hurdle.json").exists()
 

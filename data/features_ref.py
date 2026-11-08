@@ -1,8 +1,8 @@
-"""Reference implementation of the M1.2 feature/position table.
+"""Fallback feature and position formulas.
 
-M1 owns engine/features.py. This copy exists so M2's audit, vendor test and their unit tests run
-before (or without) M1's code. `get_feature_fns()` returns M1's functions when importable,
-otherwise these. Keep the formulas identical to M1.2.
+Used by the leak audit and the vendor check when engine.features cannot be imported.
+`get_feature_fns()` returns the engine functions when they import, otherwise these.
+Keep the formulas identical to engine/features.py.
 """
 from __future__ import annotations
 
@@ -60,7 +60,7 @@ def position(spec, panel: pd.DataFrame) -> pd.Series:
 
 
 def get_feature_fns():
-    """(feature, position) — M1's engine.features when available, else this reference copy."""
+    """Return (feature, position) from engine.features when it imports, else this copy."""
     try:
         from engine import features as ef  # type: ignore
         fe, po = getattr(ef, "feature"), getattr(ef, "position", None)

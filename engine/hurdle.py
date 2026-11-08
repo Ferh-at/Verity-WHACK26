@@ -1,4 +1,4 @@
-"""Luck hurdle: the whole search re-run on null data (M1.6, White 2000 style).
+"""Luck hurdle: the whole search re-run on null data (White 2000 style).
 
 For replicate b one uniform draw u_b (seed SEED + b) is shared by every hypothesis, giving the
 circular shift k_i = MIN_SHIFT + floor(u_b * (T_i - 2*MIN_SHIFT + 1)); with equal history lengths

@@ -1,4 +1,4 @@
-"""M2.8 Calibrate each alarm rule's CUSUM threshold h on stable simulations.
+"""Calibrate each alarm rule's CUSUM threshold h on stable simulations.
 
     python -m monitor.calibrate --sims 1000 --out runs/calib.json
     python -m monitor.calibrate --sims 10000 --rules bonds_protect vix_control   # overnight

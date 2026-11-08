@@ -26,7 +26,7 @@ def stationary_indices(n: int, mean_block: float, n_boot: int, rng: np.random.Ge
 
 
 def p_block_fallback(x, n: int = 1000, seed: int = 42) -> float:
-    """One-sided stationary-bootstrap p of mean > 0 (same recipe as M1.5). Used only if
+    """One-sided stationary-bootstrap p of mean > 0. Used only if
     engine.nulls is not importable."""
     x = np.asarray(x, dtype=float)
     x = x[np.isfinite(x)]

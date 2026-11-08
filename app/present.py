@@ -13,6 +13,8 @@ AMBER = "#F5C579"
 MUTED = "#9AACC5"
 LABEL_ORDER = ["Replicated", "Promising", "Fragile", "Can't tell yet", "Rejected"]
 LABEL_COLORS = dict(zip(LABEL_ORDER, ["green", "blue", "orange", "gray", "red"]))
+DATA_CREDIT = ("Market prices: Yahoo Finance (via yfinance). Rates and macro series: FRED, Federal Reserve "
+               "Bank of St. Louis. Recession dates: NBER Business Cycle Dating Committee.")
 
 
 def shell(title):
@@ -21,10 +23,12 @@ def shell(title):
     st.sidebar.caption("WHACK 26  /  Brevan Howard track")
     if offline():
         st.sidebar.markdown(":orange-background[OFFLINE]")
-    elif st.session_state.get("m3_live"):
+    elif st.session_state.get("live_run"):
         st.sidebar.markdown(":green-background[LIVE]")
     else:
         st.sidebar.markdown(":blue-background[CACHED]")
+    st.sidebar.divider()
+    st.sidebar.caption(f"**Data sources.** {DATA_CREDIT} Full list on *Data and methods*.")
     st.markdown(
         """<style>
         .block-container{padding-top:2.4rem;max-width:1260px}
@@ -47,7 +51,8 @@ def source_note(demo, name, source=None):
     elif source == "synthetic_cache":
         st.warning(f"Synthetic cache · {name}. These figures are for testing.")
     elif source == "market_cache":
-        st.caption(f"Market-data cache · {name}")
+        st.caption(f"Real market data · {name} · Yahoo Finance prices and FRED series, month-end, "
+                   "each value used only from the month it became public.")
     elif source == "external_cache":
         st.warning(f"External cache · {name}. Verify the input source before citing results.")
     elif source == "unknown":

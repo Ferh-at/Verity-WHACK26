@@ -1,4 +1,4 @@
-"""One thesis run in the C7 order (M1.13):
+"""One thesis run:
 dedupe + pre-register -> leak audit -> discovery stats -> luck hurdle + BY -> objections (always
 leakage + outlier, plus the skeptic's) -> validation -> [factor] -> holdout vault -> verdict.
 
@@ -58,7 +58,7 @@ def _now():
 
 
 def disc_summary(net: pd.Series, p: float | None = None) -> dict:
-    """Discovery-only summary handed to the skeptic (M3.3)."""
+    """Discovery-only summary handed to the skeptic."""
     if len(net) == 0:
         return {"n_obs": 0, "sharpe_net_ann": None, "nw_t": None, "p_block": p, "best_month": None,
                 "worst_month": None, "share_of_return_from_top_month": None}
@@ -270,7 +270,7 @@ def run_batch(thesis: Thesis | None, hyps: list[Hypothesis], panel: pd.DataFrame
 
 
 def verdict_facts(v: Verdict) -> dict:
-    """Flat, display-rounded numbers for the explainer (M3.4)."""
+    """Flat, display-rounded numbers for the explainer."""
     facts = {"label": v.label, "years": f"{v.power.years:.1f}", "mde": f"{v.power.mde_sharpe_80:.2f}"}
     if v.power.mintrl_years is not None:
         facts["mintrl_years"] = f"{v.power.mintrl_years:.1f}"

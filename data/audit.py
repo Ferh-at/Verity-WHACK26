@@ -1,4 +1,4 @@
-"""M2.4 Leak audit (prefix + future-edit) and the judge's "edit the future" demo.
+"""Leak audit (prefix + future-edit) and the "edit the future" demo.
 
 leak_audit(feature_fn, panel) checks, at AUDIT_N_DATES cut dates t:
   (a) prefix:      feature_fn(panel.loc[:t]) == feature_fn(panel) at every date <= t
@@ -129,7 +129,7 @@ def leak_audit(feature_fn: Callable[[pd.DataFrame], pd.Series], panel: pd.DataFr
 
 
 def leak_audit_spec(spec, panel: pd.DataFrame, hypothesis_id: str = "unknown", **kw) -> TestResult:
-    """Convenience: audit a Spec using M1's feature() (or the reference copy)."""
+    """Audit a Spec using engine.features, or the reference copy if that import fails."""
     from data.features_ref import get_feature_fns
     fe, _ = get_feature_fns()
     return leak_audit(lambda p: fe(spec, p), panel, hypothesis_id=hypothesis_id, **kw)

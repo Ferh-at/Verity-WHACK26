@@ -1,4 +1,4 @@
-"""Backtest with no look-ahead (M1.3).
+"""Backtest with no look-ahead.
 
 Timing: the position p_t set at month-end t (data <= t) earns r_{t+1}.
     gross_{t+1} = p_t * r_{t+1}

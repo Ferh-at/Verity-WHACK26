@@ -1,4 +1,4 @@
-"""Factor check (M1.10, should-have): is the alpha left after market, trend and carry?"""
+"""Factor check: is any alpha left after market, trend and carry?"""
 import numpy as np
 import pandas as pd
 import statsmodels.api as sm

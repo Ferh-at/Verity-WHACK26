@@ -1,4 +1,4 @@
-"""Duplicate clustering and effective N (M1.8): single linkage in creation order on the
+"""Duplicate clustering and effective N: single linkage in creation order on the
 correlation of discovery net returns; the first-created member represents the cluster."""
 import numpy as np
 import pandas as pd

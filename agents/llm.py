@@ -33,6 +33,12 @@ EXPLAIN_FIELDS = {
     "lo", "hi", "cusum", "h", "alarm", "integrity", "months_since_calib_end",
 }
 SPEC_FIELDS = {"feature", "series", "series2", "lookback", "transform", "asset", "direction"}
+REVIEW_FIELDS = {
+    "id", "round", "max_rounds", "ideas_tried", "effective_trials", "hurdle_t", "observed_t",
+    "p_search", "q_by", "p_block", "nw_t", "sharpe_net_ann", "n_obs", "status", "failed",
+    "dup_of", "refine_budget", "nominate_max", "best_month", "worst_month",
+    "share_of_return_from_top_month",
+}
 NUM = re.compile(r"(?<![\w])[-+]?\d+(?:\.\d+)?(?:[eE][-+]?\d+)?")
 YEAR = re.compile(r"(?<!\w)(?:19|20)\d{2}(?!\w)")
 MONTH = re.compile(r"(?<!\d)(?:19|20)\d{2}[-/]\d{1,2}(?:[-/]\d{1,2})?(?!\d)")
@@ -76,6 +82,7 @@ def assert_no_holdout(text: str):
             ("Hypothesis spec: ", SPEC_FIELDS),
             ("Discovery summary: ", DISC_FIELDS),
             ("FACTS: ", EXPLAIN_FIELDS),
+            ("Engine evidence: ", REVIEW_FIELDS),
         ):
             if not line.startswith(prefix):
                 continue
@@ -113,9 +120,17 @@ def _safe_field_text(prefix, key, value):
         return key not in {"lookback", "direction"} and bool(re.fullmatch(r"[A-Za-z][\w]*", value))
     if key in {"best_month", "worst_month", "as_of"}:
         return bool(MONTH.fullmatch(value))
+    if prefix == "Engine evidence: ":
+        return bool(re.fullmatch(r"[A-Za-z][\w,]*", value))
     if key in {"label", "rule", "integrity"}:
         return not NUM.search(value)
     return bool(re.fullmatch(r"-?\d+(?:\.\d+)?%?", value))
+
+
+def prose(text: str) -> str:
+    """Free text for a prompt line. Tokens containing digits are dropped because the boundary
+    rejects numbers outside the typed evidence fields."""
+    return re.sub(r"\s{2,}", " ", re.sub(r"\S*\d\S*", "", text)).strip()
 
 
 def key_for(model, system, user, temperature):
