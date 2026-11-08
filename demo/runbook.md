@@ -1,4 +1,4 @@
-# Discovery Lab demo runbook
+# Verity demo runbook
 
 Target 4:40. Start on Home with the app warm. Keep an offline terminal and the cached batch available. If using the bundled run, call it a synthetic rehearsal before citing any number.
 

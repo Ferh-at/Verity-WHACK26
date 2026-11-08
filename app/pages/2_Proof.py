@@ -37,7 +37,7 @@ left, right = st.columns(2)
 with left:
     st.markdown("**How often a trusted idea is actually fake**")
     fig = go.Figure()
-    for name, info, color in (("Naive t-test", m["naive"], AMBER), ("Discovery Lab", m["ours"], MINT)):
+    for name, info, color in (("Naive t-test", m["naive"], AMBER), ("Verity", m["ours"], MINT)):
         if not info:
             continue
         err = None

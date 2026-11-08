@@ -1,6 +1,6 @@
-# WHACK 26 · Discovery Lab
+# WHACK 26 · Verity
 
-Discovery Lab is a quantitative research workbench for the Brevan Howard track at WHACK 26. Give it a market thesis. A language model turns that thesis into precise, testable hypotheses. A deterministic statistics engine then tries to knock them down. The model can challenge, refine or nominate an idea. Only the statistics can let one through.
+Verity is a quantitative research workbench for the Brevan Howard track at WHACK 26. Give it a market thesis. A language model turns that thesis into precise, testable hypotheses. A deterministic statistics engine then tries to knock them down. The model can challenge, refine or nominate an idea. Only the statistics can let one through.
 
 Built by Ferhat Celik, Efe Ulker and Reyansh Mathur.
 

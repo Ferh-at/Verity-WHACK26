@@ -13,7 +13,7 @@ from pptx.enum.text import MSO_ANCHOR, PP_ALIGN
 from pptx.oxml.ns import qn
 from pptx.util import Inches, Pt
 
-OUT = Path(__file__).with_name("Discovery_Lab.pptx")
+OUT = Path(__file__).with_name("verity_talk.pptx")
 MOCKS = OUT.parent.parent / "mocks"
 FONT = "Segoe UI"
 
@@ -153,12 +153,12 @@ def build(output):
     s = deck.slides.add_slide(blank)
     text(s, 0.8, 1.5, 11.65, 0.7, "How much of the best backtest is luck?", 38, True)
     line(s, 0.8, 2.75, 2.3, 2.75, ENG, 3)
-    text(s, 0.8, 3.08, 11.65, 0.88, "Discovery Lab", 47, True, ENG)
+    text(s, 0.8, 3.08, 11.65, 0.88, "Verity", 47, True, ENG)
     text(s, 0.8, 4.15, 9.9, 0.94, "An AI researcher that tests trading ideas against what chance can produce.",
          23, color=MUTED)
     text(s, 0.8, 6.76, 8, 0.3, "WHACK 26 · Brevan Howard track", 12, color=MUTED)
     notes(s, "0:00–0:20\n\n"
-          "If an AI tries twenty trading rules, one can look good by chance. Discovery Lab tests whether "
+          "If an AI tries twenty trading rules, one can look good by chance. Verity tests whether "
           "the best-looking rule beats what chance could produce from the same search.")
 
     s = deck.slides.add_slide(blank)
@@ -245,7 +245,7 @@ def build(output):
     s = deck.slides.add_slide(blank)
     title(s, "Proof", "Synthetic benchmark of the statistical pipeline")
     text(s, 0.8, 1.67, 11.75, 0.48, "Share of accepted rules that were planted fakes", 22, True)
-    chart = column_chart(s, 0.8, 2.18, 7.74, 3.87, ["Naive t-test", "Discovery Lab"], "Share of accepted rules that were fake",
+    chart = column_chart(s, 0.8, 2.18, 7.74, 3.87, ["Naive t-test", "Verity"], "Share of accepted rules that were fake",
                          [naive["fdr_mean"], lab["fdr_mean"]], [GREY_BAR, ENG], gap_width=70)
     chart.value_axis.maximum_scale = 1.0
     chart.value_axis.visible = False
@@ -265,12 +265,12 @@ def build(output):
          15, color=MUTED)
     notes(s, "2:15–3:00\n\n"
           f"Across fifty synthetic datasets, an average of {naive['fdr_mean']:.2%} of the rules accepted by the "
-          f"naive t-test were planted fakes. For the lab’s statistical pipeline it was {lab['fdr_mean']:.2%}. "
+          f"naive t-test were planted fakes. For Verity’s statistical pipeline it was {lab['fdr_mean']:.2%}. "
           f"It found {recall['2.0']:.0%} of the strongest planted signals and {recall['1.0']:.0%} at Sharpe one. "
           "You can inspect every rule tried, the evidence behind its verdict, and what the sample had enough "
           "power to detect.\n\n"
           "Sources: engine/benchmark.py and mocks/recorded_benchmark/benchmark_metrics.json. “Accepted” means "
-          "Promising or Replicated for the lab, and one-sided p < 0.05 for the naive t-test. The benchmark "
+          "Promising or Replicated for Verity, and one-sided p < 0.05 for the naive t-test. The benchmark "
           "uses the batch pipeline with the factor check enabled and has no model in the loop. End the "
           "three-minute talk here.")
 

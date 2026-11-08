@@ -42,14 +42,14 @@ CHECKS = [
 ]
 
 shell("Home")
-heading("RESEARCH TERMINAL", "Discovery Lab",
+heading("RESEARCH TERMINAL", "Verity",
         "An AI researcher that tests its own ideas and reports which ones survive.")
 st.markdown(
     "> Finding patterns in data is easy; knowing which ones to trust is hard. Create an AI researcher "
     "that tests its own ideas and can tell a real discovery from a lucky one."
 )
 st.markdown(
-    "Give the lab a market thesis. The **AI** proposes precise hypotheses, a **deterministic engine** tests them, "
+    "Give Verity a market thesis. The **AI** proposes precise hypotheses, a **deterministic engine** tests them, "
     "and the AI reviews the evidence: it challenges ideas, refines them or nominates the best for a sealed holdout. "
     "The AI can make an idea fail. Only the statistics can make it pass."
 )
@@ -82,7 +82,7 @@ else:
 a, b, c = st.columns(3)
 ours = metrics["ours"]["mean"] if metrics["ours"] else None
 naive = metrics["naive"]["mean"] if metrics["naive"] else None
-a.metric("False discovery rate · lab / naive t-test", f"{pct(ours, 2)} / {pct(naive, 2)}")
+a.metric("False discovery rate · Verity / naive t-test", f"{pct(ours, 2)} / {pct(naive, 2)}")
 b.metric("Planted look-ahead leaks caught", pct(metrics["leak_catch"]))
 c.metric("Pure-noise searches with a trusted result",
          f"{round(noise['share_with_trusted'] * noise['n_searches'])} of {noise['n_searches']}"

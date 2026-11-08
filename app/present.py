@@ -18,8 +18,8 @@ DATA_CREDIT = ("Market prices: Yahoo Finance (via yfinance). Rates and macro ser
 
 
 def shell(title):
-    st.set_page_config(page_title=f"{title} · Discovery Lab", page_icon="◆", layout="wide")
-    st.sidebar.markdown("### ◆ Discovery Lab")
+    st.set_page_config(page_title=f"{title} · Verity", page_icon="◆", layout="wide")
+    st.sidebar.markdown("### ◆ Verity")
     st.sidebar.caption("WHACK 26  /  Brevan Howard track")
     if offline():
         st.sidebar.markdown(":orange-background[OFFLINE]")
